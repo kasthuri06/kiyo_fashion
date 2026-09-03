@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "../hooks/useInView";
 
 const aboutImage =
-  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=900&q=80";
+  "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=900&q=80";
 
 export default function About() {
   const { ref, inView } = useInView();

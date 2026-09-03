@@ -52,11 +52,11 @@ export const features = [
   },
 ];
 
-// Placeholder image URLs — replace with real store images
-// All images are men's fashion as Kiyo Fashion is a men's clothing store
+// Collections gallery — all men's clothing/outfit photos
 export const galleryImages = [
   {
     id: 1,
+    // Man in navy blue suit walking — full outfit visible
     src: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&q=80",
     alt: "Men's fashion collection at Kiyo Fashion",
     category: "Men's Wear",
@@ -64,70 +64,76 @@ export const galleryImages = [
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1594938298603-c8148c4b4bd4?w=600&q=80",
+    // Man in traditional/ethnic kurta outfit
+    src: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/629633/01/mod01/fnd/IND/fmt/png/GRAPHICS-Drive-In-Men's-Relaxed-Fit-Tee",
     alt: "Men's ethnic wear at Kiyo Fashion",
-    category: "Ethnic Wear",
+    category: "Street Wear",
     size: "small",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1550246140-5119ae4790b8?w=600&q=80",
+    // Man in casual streetwear outfit
+    src: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80",
     alt: "Men's casual wear at Kiyo Fashion",
     category: "Casual Wear",
     size: "small",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=600&q=80",
+    // Man in sharp formal suit
+    src: "https://i.pinimg.com/originals/5c/b6/98/5cb69800914882a234f03488c5328b22.jpg",
     alt: "Men's formal style at Kiyo Fashion",
     category: "Formal Wear",
     size: "medium",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80",
+    // Man in stylish contemporary outfit
+    src: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/691395/70/mod01/fnd/IND/fmt/png/Essentials-Men's-Slim-Fit-Ottoman-Knit-Pants",
     alt: "Men's contemporary fashion",
     category: "Contemporary",
     size: "medium",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1600091166971-7f9faad6c303?w=600&q=80",
+    // Man in festive/party outfit
+    src: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/687093/49/mod01/fnd/IND/fmt/png/Men's-Slim-Fit-Polo-T-shirt",
     alt: "Men's festive wear at Kiyo Fashion",
-    category: "Festive Wear",
+    category: "Classic Wear",
     size: "small",
   },
 ];
 
+// Instagram grid — completely different men's fashion photos from gallery
 export const instagramPosts = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400&q=80",
-    alt: "Kiyo Fashion men's collection",
+    src: "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=400&q=80",
+    alt: "Kiyo Fashion men's outfit 1",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1594938298603-c8148c4b4bd4?w=400&q=80",
-    alt: "Kiyo Fashion men's ethnic wear",
+    src: "https://images.unsplash.com/photo-1598032895397-b9472444bf93?w=400&q=80",
+    alt: "Kiyo Fashion men's outfit 2",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
-    alt: "Kiyo Fashion men's style",
+    src: "https://images.unsplash.com/photo-1610652492500-ded49ceeb378?w=400&q=80",
+    alt: "Kiyo Fashion men's outfit 3",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1600091166971-7f9faad6c303?w=400&q=80",
-    alt: "Kiyo Fashion men's festive wear",
+    src: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/634138/88/mod01/fnd/IND/fmt/png/Essentials-Men's-Jacquard-Collar-Polo-Tee",
+    alt: "Kiyo Fashion men's outfit 4",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1550246140-5119ae4790b8?w=400&q=80",
-    alt: "Kiyo Fashion men's casual wear",
+    src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&q=80",
+    alt: "Kiyo Fashion men's outfit 5",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=400&q=80",
-    alt: "Kiyo Fashion men's formal wear",
+    src: "https://images.unsplash.com/photo-1555069519-127aadedf1ee?w=400&q=80",
+    alt: "Kiyo Fashion men's outfit 6",
   },
 ];
