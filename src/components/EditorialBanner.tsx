@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 
 const bannerImage =
-  "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80";
+  "https://images.unsplash.com/photo-1600091166971-7f9faad6c303?w=1920&q=80";
 
 export default function EditorialBanner() {
   const ref = useRef<HTMLElement>(null);
@@ -16,7 +16,7 @@ export default function EditorialBanner() {
       <motion.div className="absolute inset-0 z-0" style={{ y }}>
         <img
           src={bannerImage}
-          alt="Fashion at Kiyo Fashion"
+          alt="Men's fashion at Kiyo Fashion"
           className="w-full h-[130%] object-cover object-top"
           loading="lazy"
         />

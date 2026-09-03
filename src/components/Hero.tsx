@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=85";
+  "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=1920&q=85";
 
 export default function Hero() {
   const scrollToNext = () => {
@@ -65,7 +65,7 @@ export default function Hero() {
           transition={{ delay: 0.7, duration: 0.7 }}
           className="font-sans text-base md:text-lg text-[#F8F5EF]/80 max-w-lg mx-auto mb-10 leading-relaxed font-light"
         >
-          Discover contemporary fashion and timeless styles at Kiyo Fashion, Thiruporur.
+          Discover premium men's fashion and timeless styles at Kiyo Fashion, Thiruporur.
         </motion.p>
 
         {/* Buttons */}

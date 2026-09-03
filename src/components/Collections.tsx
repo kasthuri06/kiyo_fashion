@@ -3,6 +3,21 @@ import { ArrowRight } from "lucide-react";
 import { useInView } from "../hooks/useInView";
 import { galleryImages } from "../data/storeData";
 
+// Fallback if an image URL ever fails to load
+const FALLBACK = "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80";
+
+function GalleryImg({ src, alt, className }: { src: string; alt: string; className: string }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      loading="lazy"
+      onError={(e) => { (e.currentTarget as HTMLImageElement).src = FALLBACK; }}
+    />
+  );
+}
+
 export default function Collections() {
   const { ref, inView } = useInView();
 
@@ -47,13 +62,12 @@ export default function Collections() {
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="col-span-2 md:col-span-1 md:row-span-2 group relative overflow-hidden cursor-pointer"
+            className="col-span-2 md:col-span-1 md:row-span-2 group relative overflow-hidden cursor-pointer bg-[#e8e4de]"
           >
-            <img
+            <GalleryImg
               src={galleryImages[0].src}
               alt={galleryImages[0].alt}
               className="w-full h-64 md:h-full min-h-[400px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
-              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#171717]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
             <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400">
@@ -72,13 +86,12 @@ export default function Collections() {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 + i * 0.1, duration: 0.7 }}
-              className="group relative overflow-hidden cursor-pointer"
+              className="group relative overflow-hidden cursor-pointer bg-[#e8e4de]"
             >
-              <img
+              <GalleryImg
                 src={img.src}
                 alt={img.alt}
                 className="w-full h-48 md:h-56 object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#171717]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400">
@@ -94,13 +107,12 @@ export default function Collections() {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4 + i * 0.1, duration: 0.7 }}
-              className="group relative overflow-hidden cursor-pointer"
+              className="group relative overflow-hidden cursor-pointer bg-[#e8e4de]"
             >
-              <img
+              <GalleryImg
                 src={img.src}
                 alt={img.alt}
                 className="w-full h-48 md:h-60 object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#171717]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400">

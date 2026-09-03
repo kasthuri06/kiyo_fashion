@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "../hooks/useInView";
 
 const aboutImage =
-  "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80";
+  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=900&q=80";
 
 export default function About() {
   const { ref, inView } = useInView();
@@ -39,7 +39,7 @@ export default function About() {
               transition={{ delay: 0.2, duration: 0.7 }}
               className="font-sans text-base md:text-lg text-[#F8F5EF]/70 leading-relaxed mb-6 font-light"
             >
-              Kiyo Fashion is a local clothing destination in Thiruporur, where customers come to explore stylish clothing in a warm, welcoming in-store environment.
+              Kiyo Fashion is a men's clothing destination in Thiruporur, where customers come to explore stylish menswear in a warm, welcoming in-store environment.
             </motion.p>
 
             <motion.p
@@ -48,7 +48,7 @@ export default function About() {
               transition={{ delay: 0.3, duration: 0.7 }}
               className="font-sans text-base text-[#F8F5EF]/60 leading-relaxed mb-10 font-light"
             >
-              Whether you're looking for something for a special occasion, everyday wear, or a festive celebration — Kiyo Fashion brings you curated styles that speak to who you are.
+              Whether you're looking for ethnic wear for a special occasion, sharp casuals for everyday, or festive outfits — Kiyo Fashion brings you curated men's styles that speak to who you are.
             </motion.p>
 
             <motion.div
@@ -95,7 +95,7 @@ export default function About() {
             <div className="relative overflow-hidden">
               <img
                 src={aboutImage}
-                alt="Fashion at Kiyo Fashion store, Thiruporur"
+                alt="Men's fashion at Kiyo Fashion store, Thiruporur"
                 className="w-full h-[500px] md:h-[620px] object-cover object-center"
                 loading="lazy"
               />
